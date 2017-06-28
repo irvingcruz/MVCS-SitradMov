@@ -5,3 +5,10 @@ C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\bin\Debug\BusinessEntity.pdb
 C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\obj\Debug\DataAccess.dll
 C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\obj\Debug\DataAccess.pdb
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\bin\Debug\DataAccess.dll
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\bin\Debug\DataAccess.pdb
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\bin\Debug\BusinessEntity.dll
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\bin\Debug\BusinessEntity.pdb
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\obj\Debug\DataAccess.dll
+C:\_MVCS-GIT-Apps\MVCS-SitradMov\DataAccess\obj\Debug\DataAccess.pdb
