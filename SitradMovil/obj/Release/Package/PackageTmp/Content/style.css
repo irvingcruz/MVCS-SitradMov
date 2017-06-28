@@ -1,0 +1,17 @@
+﻿body {
+}
+nav {
+    background-color: #00456f;
+}
+.row {
+    margin-bottom: 5px;
+}
+.btn-blue {
+    background-color: #00456f;
+}
+.btn-gris {
+    background-color: #808080;
+}
+.font-table {
+    font-family: Cambria;
+}

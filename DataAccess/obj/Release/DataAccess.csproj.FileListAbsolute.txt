@@ -1,0 +1,7 @@
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\bin\Release\DataAccess.dll
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\bin\Release\DataAccess.pdb
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\bin\Release\BusinessEntity.dll
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\bin\Release\BusinessEntity.pdb
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\obj\Release\DataAccess.dll
+C:\_MVCS-GIT-Apps\SitradMovil\DataAccess\obj\Release\DataAccess.pdb

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<BusinessEntity.BESitrad>
+
+@*@{
+    ViewBag.Title = "Trazabilidad";
+
+    var grid = new WebGrid(
+        source: Model.ToList(),
+        rowsPerPage: 5);
+}
+
+<h2>Grid</h2>
+
+@grid.GetHtml(
+    columns: grid.Columns(
+    grid.Column("Nro", "Nro"),
+    grid.Column("Documento", "Documento"),
+    grid.Column("EnviaArea", "Envia-Area"),
+    grid.Column("EnviaFecha", "Envia-Fecha"),
+    grid.Column("RecibeArea", "Recibe-Area"),
+    grid.Column("RecibeFecha", "Recibe-Fecha")
+    )
+)*@
+<p>&nbsp;</p>
+<p>
+    <h5>Resultado de la HT: @ViewBag.Tramite</h5>
+</p>
+
+<table class="striped highlight responsive-table font-table">
+    <thead>
+        <tr>
+            <th>Nro</th>
+            <th>Documento</th>
+            <th>Envia-Area</th>
+            <th>Envia-Fecha</th>
+            <th>Recibe-Area</th>
+            <th>Recibe-Fecha</th>
+        </tr>
+    </thead>
+
+    <tbody>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.Nro)</td>
+        <td>@Html.DisplayFor(modelItem => item.Documento)</td>
+        <td>@Html.DisplayFor(modelItem => item.EnviaArea)</td>
+        <td>@Html.DisplayFor(modelItem => item.EnviaFecha)</td>
+        <td>@Html.DisplayFor(modelItem => item.RecibeArea)</td>
+        <td>@Html.DisplayFor(modelItem => item.RecibeFecha)</td>
+    </tr>
+}
+
+    </tbody>
+</table>
+

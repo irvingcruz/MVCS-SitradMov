@@ -1,0 +1,71 @@
+﻿@model BusinessEntity.BESitrad
+
+<br />
+<section>
+    <div class="row">
+        @using (Html.BeginForm("Resultado", "Sitrad", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <form class="col s12">
+                <div class="row center-align">
+                    &nbsp;
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">                                                
+                        @Html.EditorFor(model => model.IDTramite, new { htmlAttributes = new { @class = "validate", @placeholder = "ejm: 984521-2015", @maxlength = 15 } })
+                        @Html.ValidationMessageFor(model => model.IDTramite, "", new { @class = "text-danger" })
+                        <label for="usuario">Número Tramite</label>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <div class="col s2"></div>
+                    <div class="col s8">
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn01">1</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn02">2</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn03">3</button>
+                    </div>                    
+                    <div class="col s2"></div>
+                </div>
+                <div class="row center-align">
+                    <div class="col s2"></div>
+                    <div class="col s8">
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn04">4</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn05">5</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn06">6</button>
+                    </div>
+                    <div class="col s2"></div>
+                </div>
+                <div class="row center-align">
+                    <div class="col s2"></div>
+                    <div class="col s8">
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn07">7</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn08">8</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn09">9</button>
+                    </div>
+                    <div class="col s2"></div>
+                </div>
+                <div class="row center-align">
+                    <div class="col s2"></div>
+                    <div class="col s8">
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn11">-</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn10">0</button>
+                        <button class="btn waves-effect waves-light btn-gris" type="button" id="btn12">x</button>
+                    </div>
+                    <div class="col s2"></div>
+                </div>
+                <p>
+                    <div class="row center-align">
+                        <div class="col s12">
+                            <button class="btn waves-effect waves-light btn-blue" type="submit" name="action">
+                                Buscar
+                                <i class="material-icons right">pageview</i>
+                            </button>
+                        </div>
+                    </div>
+                </p>
+
+            </form>
+        }
+</div>
+</section>
+

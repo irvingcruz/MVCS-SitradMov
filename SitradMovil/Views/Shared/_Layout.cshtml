@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo right"><img src="~/img/logo.png" height="50" /></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            @*<ul class="right hide-on-med-and-down">
+                <li><a href="sass.html"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="#"><i class="material-icons left">settings_power</i> Cerrar Sesión</a></li>
+            </ul>*@
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="~/img/fondo_user.jpg" />
+                        </div>
+                        <a href="#!"><img src="~/img/logo-perfil.png" class="img-responsive circle" /></a>
+                        @{
+                            if (Request.IsAuthenticated)
+                            {
+                                string[] _datos = User.Identity.Name.Split(Convert.ToChar("|"));
+
+
+                                <a href="#!"><span class="white-text name">@_datos[0]</span></a>
+                                <a href="#!"><span class="white-text email">@_datos[1]</span></a>
+                            }
+                        }
+                    </div>
+                </li>
+                <li><a href="@Url.Action("Index","Sitrad")"><i class="material-icons left">home</i>Home</a></li>                                
+                <li><a href="@Url.Action("Logout","Account")"><i class="material-icons left">settings_power</i> Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>    
+    <div class="container">
+        @RenderBody()
+        @*<hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/materialize")
+    @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+
+            NumeroTramite = $("#IDTramite");
+            $("#btn01").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "1"); });
+            $("#btn02").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "2"); });
+            $("#btn03").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "3"); });
+            $("#btn04").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "4"); });
+            $("#btn05").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "5"); });
+            $("#btn06").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "6"); });
+            $("#btn07").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "7"); });
+            $("#btn08").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "8"); });
+            $("#btn09").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "9"); });
+            $("#btn10").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "0"); });
+            $("#btn11").on("click", function () { NumeroTramite.val(NumeroTramite.val() + "-"); });
+            $("#btn12").on("click", function () { NumeroTramite.val(NumeroTramite.val().slice(0,-1)); });
+    
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\obj\Debug\BusinessEntity.csprojResolveAssemblyReference.cache
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\obj\Debug\BusinessEntity.pdb

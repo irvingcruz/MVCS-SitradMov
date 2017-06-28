@@ -1,0 +1,4 @@
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\bin\Release\BusinessEntity.dll
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\bin\Release\BusinessEntity.pdb
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\obj\Release\BusinessEntity.dll
+C:\_MVCS-GIT-Apps\SitradMovil\BusinessEntity\obj\Release\BusinessEntity.pdb
