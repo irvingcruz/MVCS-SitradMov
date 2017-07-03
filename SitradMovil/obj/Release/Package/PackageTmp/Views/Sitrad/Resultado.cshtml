@@ -1,25 +1,7 @@
 ﻿@model IEnumerable<BusinessEntity.BESitrad>
-
-@*@{
-    ViewBag.Title = "Trazabilidad";
-
-    var grid = new WebGrid(
-        source: Model.ToList(),
-        rowsPerPage: 5);
+@{
+    ViewBag.Title = "Resultado";
 }
-
-<h2>Grid</h2>
-
-@grid.GetHtml(
-    columns: grid.Columns(
-    grid.Column("Nro", "Nro"),
-    grid.Column("Documento", "Documento"),
-    grid.Column("EnviaArea", "Envia-Area"),
-    grid.Column("EnviaFecha", "Envia-Fecha"),
-    grid.Column("RecibeArea", "Recibe-Area"),
-    grid.Column("RecibeFecha", "Recibe-Fecha")
-    )
-)*@
 <p>&nbsp;</p>
 <p>
     <h5>Resultado de la HT: @ViewBag.Tramite</h5>

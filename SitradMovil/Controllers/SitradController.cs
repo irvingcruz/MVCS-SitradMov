@@ -24,7 +24,7 @@ namespace SitradMovil.Controllers
         {
             if (!ModelState.IsValid)
             {
-                goto Terminar;
+                return View("Index");
             }
             string[] valores = oTramite.IDTramite.Split(Convert.ToChar("-"));
             if (valores.Length != 2)

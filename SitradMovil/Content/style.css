@@ -1,4 +1,5 @@
 ﻿body {
+    background-image: url('../../img/fondo-login.jpg');
 }
 nav {
     background-color: #00456f;
@@ -14,4 +15,19 @@ nav {
 }
 .font-table {
     font-family: Cambria;
+}
+.input-field label:not(.label-icon).active {
+    font-size: .9rem;
+    color: darkblue;
+}
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default) {
+    border-bottom: 1px solid darkblue !important;
+}
+span.field-validation-error.text-danger {
+    color: red;
+    font-size: 12px;
+    background-color: lemonchiffon;
+    font-weight: bold;
+    padding: 5px;
 }

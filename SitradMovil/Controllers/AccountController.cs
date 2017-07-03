@@ -22,7 +22,7 @@ namespace SitradMovil.Controllers
             {
                 BEUsuario oUsuario = new BEUsuario();
                 ViewBag.ReturnUrl = ReturnUrl;
-                return PartialView(oUsuario);
+                return View(oUsuario);
             }
             else
             {
@@ -37,14 +37,8 @@ namespace SitradMovil.Controllers
         public ActionResult Login(BEUsuario oUsuario, string ReturnUrl = "")
         {
             oUsuario.Alerta = "";
-            if (oUsuario.UserName == null || oUsuario.UserName.Trim().Length == 0) {
-                oUsuario.Alerta = "Favor de ingresar el USUARIO";
-                goto Terminar;
-            }
-
-            if (oUsuario.Password == null || oUsuario.Password.Trim().Length == 0)
+            if (!ModelState.IsValid)
             {
-                oUsuario.Alerta = "Favor de ingresar el PASSWORD";
                 goto Terminar;
             }
 
@@ -70,9 +64,9 @@ namespace SitradMovil.Controllers
                 }
             }
             else { oUsuario.Alerta = "(*) Las credenciales son incorrectas..!";  }
-            Terminar:
-            ModelState.Remove("Password");            
-            return PartialView(oUsuario);
+            ModelState.Remove("Password");
+            Terminar:            
+            return View(oUsuario);
         }
         [Authorize]
         public ActionResult Logout()

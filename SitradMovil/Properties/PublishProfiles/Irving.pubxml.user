@@ -19,13 +19,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2017 12:35:16</publishTime>
     </File>
     <File Include="bin/BusinessEntity.dll">
-      <publishTime>06/28/2017 11:55:17</publishTime>
+      <publishTime>07/03/2017 10:53:07</publishTime>
     </File>
     <File Include="bin/BusinessLogic.dll">
-      <publishTime>06/28/2017 11:55:17</publishTime>
+      <publishTime>07/03/2017 10:53:07</publishTime>
     </File>
     <File Include="bin/DataAccess.dll">
-      <publishTime>06/28/2017 11:55:17</publishTime>
+      <publishTime>07/03/2017 10:53:07</publishTime>
     </File>
     <File Include="bin/es/System.Web.Helpers.resources.dll">
       <publishTime>01/28/2015 04:04:36</publishTime>
@@ -115,7 +115,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/SitradMovil.dll">
-      <publishTime>06/28/2017 11:55:20</publishTime>
+      <publishTime>07/03/2017 10:53:10</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
@@ -151,7 +151,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2017 12:41:58</publishTime>
     </File>
     <File Include="Content/style.css">
-      <publishTime>06/28/2017 10:38:41</publishTime>
+      <publishTime>07/03/2017 10:30:30</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>06/27/2017 12:34:51</publishTime>
@@ -168,6 +168,36 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="fonts/glyphicons-halflings-regular.woff">
       <publishTime>06/27/2017 12:34:56</publishTime>
     </File>
+    <File Include="fonts/roboto/Roboto-Bold.woff">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.woff2">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.woff">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.woff2">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.woff">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.woff2">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.woff">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.woff2">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.woff">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.woff2">
+      <publishTime>06/22/2017 11:41:28</publishTime>
+    </File>
     <File Include="Global.asax">
       <publishTime>06/27/2017 12:34:51</publishTime>
     </File>
@@ -176,6 +206,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="img/favicon.ico">
       <publishTime>05/02/2017 11:53:35</publishTime>
+    </File>
+    <File Include="img/fondo-login.jpg">
+      <publishTime>07/03/2017 09:20:59</publishTime>
     </File>
     <File Include="img/fondo_user.jpg">
       <publishTime>06/27/2017 16:42:59</publishTime>
@@ -243,20 +276,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/respond.min.js">
       <publishTime>06/27/2017 13:57:44</publishTime>
     </File>
+    <File Include="Views/Account/AccessDenied.cshtml">
+      <publishTime>06/28/2017 18:54:49</publishTime>
+    </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>06/28/2017 11:54:05</publishTime>
+      <publishTime>07/03/2017 10:41:04</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>06/27/2017 12:34:51</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>06/28/2017 11:54:40</publishTime>
+      <publishTime>07/03/2017 10:42:03</publishTime>
     </File>
     <File Include="Views/Sitrad/Index.cshtml">
-      <publishTime>06/28/2017 10:52:10</publishTime>
+      <publishTime>07/03/2017 09:54:51</publishTime>
     </File>
     <File Include="Views/Sitrad/Resultado.cshtml">
-      <publishTime>06/28/2017 11:17:05</publishTime>
+      <publishTime>07/03/2017 09:57:27</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>06/27/2017 12:34:51</publishTime>
@@ -265,7 +301,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2017 12:34:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/28/2017 11:55:20</publishTime>
+      <publishTime>07/03/2017 10:53:12</publishTime>
     </File>
   </ItemGroup>
 </Project>

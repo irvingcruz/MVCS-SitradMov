@@ -9,9 +9,9 @@ namespace BusinessEntity
 {
     public class BEUsuario
     {
-        //[Required(ErrorMessage = "Favor de ingresar su USUARIO.")]
+        [Required(ErrorMessage = "Favor de ingresar su USUARIO.")]
         public string UserName { get; set; }
-        //[Required(ErrorMessage = "Favor de ingresar su PASSWORD.")]
+        [Required(ErrorMessage = "Favor de ingresar su PASSWORD.")]
         public string Password { get; set; }
         public string Nombres { get; set; }
         public string Correo { get; set; }
