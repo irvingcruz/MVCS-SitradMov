@@ -13,6 +13,10 @@ namespace SitradMovil
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Sitrad",
+                "sitrad/detalle/{IDTramite}/{Documento}",
+                new { controller = "Sitrad", action = "Detalle", IDramite = 0, Documento = "" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

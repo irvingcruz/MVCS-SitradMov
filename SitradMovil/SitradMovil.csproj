@@ -219,6 +219,7 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Sitrad\Resultado.cshtml" />
     <Content Include="Views\Account\AccessDenied.cshtml" />
+    <Content Include="Views\Sitrad\Detalle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

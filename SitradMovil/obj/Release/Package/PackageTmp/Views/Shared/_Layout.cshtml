@@ -31,10 +31,13 @@
                                 <a href="#!"><img src="~/img/logo-perfil.png" class="img-responsive circle" /></a>
                                 @{ 
                                     string[] _datos = User.Identity.Name.Split(Convert.ToChar("|"));
-                                }                                
-                                <a href="#!"><span class="white-text name">@_datos[0]</span></a>
-                                <a href="#!"><span class="white-text email">@_datos[1]</span></a>
-
+                                }    
+                                             
+                                @if (_datos.Length == 2)
+                                {
+                                    <a href="#!"><span class="white-text name">@_datos[0]</span></a>
+                                    <a href="#!"><span class="white-text email">@_datos[1]</span></a>
+                                }               
                             </div>
                         </li>
                         <li><a href="@Url.Action("Index","Sitrad")"><i class="material-icons left">home</i>Home</a></li>
@@ -81,5 +84,6 @@
         Materialize.toast(alerta, 4000);
 
     </script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

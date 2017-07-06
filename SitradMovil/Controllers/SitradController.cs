@@ -32,11 +32,19 @@ namespace SitradMovil.Controllers
                 goto Terminar;
             }
             ViewBag.Tramite = oTramite.IDTramite;
-            List<BESitrad> datosResult = new BLSitrad().fnTrazabilidadSITRAD(oTramite.IDTramite);
+            List<BESitrad> datosResult = new BLSitrad().fn_SelectDocumentosTramite(oTramite.IDTramite);
             return View("Resultado",datosResult.ToList());
 
             Terminar:
             return View();
+        }
+
+        public ActionResult Detalle(int IDTramite, string Documento)
+        {
+            Documento = Documento.Replace("|", "/");
+            ViewBag.Documento = Documento;
+            List<BESitrad> datosDetalle = new BLSitrad().fnTrazabilidadSITRAD(IDTramite, Documento);
+            return View(datosDetalle.ToList());
         }
 
         

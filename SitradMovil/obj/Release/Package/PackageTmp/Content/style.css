@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url('../../img/fondo-login.jpg');
+    background-image: url('../img/fondo-login.jpg');
 }
 nav {
     background-color: #00456f;
@@ -15,6 +15,7 @@ nav {
 }
 .font-table {
     font-family: Cambria;
+    font-size: 12px;
 }
 .input-field label:not(.label-icon).active {
     font-size: .9rem;
@@ -30,4 +31,21 @@ span.field-validation-error.text-danger {
     background-color: lemonchiffon;
     font-weight: bold;
     padding: 5px;
+}
+.collapsible-header {
+    line-height: 1.5rem;
+    border-bottom: 1px solid #00456f;
+    background-color: #e7f3f9;
+}
+.tabs {
+    background-color: #00456f;
+}
+.tabs > li > a {
+    color: #fff !important;
+}
+div.collapsible-body {
+    padding: 10px;
+}
+.body-text {
+    color: #173265;
 }

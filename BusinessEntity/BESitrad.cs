@@ -12,6 +12,17 @@ namespace BusinessEntity
         public int Nro { get; set; }
         [Required(ErrorMessage = "Favor de ingresar el numero de tramite.")]
         public string IDTramite { get; set; }
+        public int IDDocumento { get; set; }
+        public string Documento { get; set; }
+        public string FechaEmision { get; set; }
+        public string Remitente { get; set; }
+        public string Destinatario { get; set; }
+        public List<BESitradTraza> oTraza { get; set; }
+    }
+
+    public class BESitradTraza
+    {
+        public int Nro { get; set; }
         public string Documento { get; set; }
         public string EnviaArea { get; set; }
         public string EnviaFecha { get; set; }
