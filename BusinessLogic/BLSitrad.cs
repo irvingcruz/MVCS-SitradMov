@@ -24,6 +24,7 @@ namespace BusinessLogic
             }
             catch (Exception e) { throw e; }
         }
+
         public List<BESitrad> fn_SelectDocumentosTramite(string vNumeroHT)
         {
             try
@@ -31,20 +32,6 @@ namespace BusinessLogic
                 oCon = BLConexion.SITRAD();
                 DASitrad obj = new DASitrad(oCon);
                 List<BESitrad> resultado = obj.fn_SelectDocumentosTramite(vNumeroHT);
-                return resultado;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-        public List<BESitrad> fnTrazabilidadSITRAD(int IDTramite,string Documento)
-        {
-            try
-            {
-                oCon = BLConexion.SITRAD();
-                DASitrad obj = new DASitrad(oCon);
-                List<BESitrad> resultado = obj.fnTrazabilidadSITRAD(IDTramite, Documento);
                 return resultado;
             }
             catch (Exception e) { throw e; }

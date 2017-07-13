@@ -14,10 +14,19 @@ namespace BusinessEntity
         public string IDTramite { get; set; }
         public int IDDocumento { get; set; }
         public string Documento { get; set; }
-        public string FechaEmision { get; set; }
-        public string Remitente { get; set; }
-        public string Destinatario { get; set; }
-        public List<BESitradTraza> oTraza { get; set; }
+        public string EnviaArea { get; set; }
+        public string EnviaFecha { get; set; }
+        public string EnviaUser { get; set; }
+        public string RecibeArea { get; set; }
+        public string RecibeFecha { get; set; }
+        public string RecibeUser { get; set; }
+        public string Estado { get; set; }
+        public int Dias { get; set; }
+        public string Observaciones { get; set; }
+        //public string FechaEmision { get; set; }
+        //public string Remitente { get; set; }
+        //public string Destinatario { get; set; }
+        //public List<BESitradTraza> oTraza { get; set; }
     }
 
     public class BESitradTraza
@@ -29,7 +38,7 @@ namespace BusinessEntity
         public string RecibeArea { get; set; }
         public string RecibeFecha { get; set; }
         public string Estado { get; set; }
-        public int Dias { get; set; }
-        public string Observaciones { get; set; }
+        //public int Dias { get; set; }
+        //public string Observaciones { get; set; }
     }
 }

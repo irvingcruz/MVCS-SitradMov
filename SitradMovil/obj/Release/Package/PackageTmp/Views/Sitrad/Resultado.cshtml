@@ -27,30 +27,21 @@
         @foreach (var item in Model)
         {
             <li>
-                <div class="collapsible-header"><i class="material-icons">info</i>@Html.DisplayFor(modelItem => item.Documento) | @Html.DisplayFor(modelItem => item.Destinatario) | @Html.DisplayFor(modelItem => item.Destinatario)</div>
+                <div class="collapsible-header"><i class="material-icons">info</i>@Html.DisplayFor(modelItem => item.EnviaArea) | @Html.DisplayFor(modelItem => item.RecibeArea)</div>
                 <div class="collapsible-body">
                     <div class="row">
                         <div class="col s12">
-                            <ul class="tabs">
-                                @foreach (var det in item.oTraza)
-                                {
-                                    var link = "#tb" + item.Nro + det.Nro;
-                                    <li class="tab col s1"><a href="@link">@Html.DisplayFor(modelDet => det.Nro)</a> </li>
-                                }                                
-                            </ul>
-                        </div>
-                        @foreach (var det in item.oTraza)
-                        {
-                            var link = "tb" + item.Nro + det.Nro;
-                            <div id="@link" class="col s12">
-                                <p class="body-text">
-                                    <span style="font-weight: bold">Envia-Area:</span>@Html.DisplayFor(modelDet => det.EnviaArea)<br />
-                                    <span style="font-weight: bold">Envia-Fecha:</span>@Html.DisplayFor(modelDet => det.EnviaFecha)<br />
-                                    <span style="font-weight: bold">Recibe-Area:</span>@Html.DisplayFor(modelDet => det.RecibeArea)<br />
-                                    <span style="font-weight: bold">Recibe-Fecha:</span>@Html.DisplayFor(modelDet => det.RecibeFecha)
-                                </p>
-                            </div>
-                        }                                               
+                            <p class="body-text">
+                                <span style="font-weight: bold; text-transform: uppercase;">DOCUMENTO:</span>&nbsp;@Html.DisplayFor(modelItem => item.Documento)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">F. ENVIA:</span>&nbsp;@Html.DisplayFor(modelItem => item.EnviaFecha)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">U. ENVIA:</span>&nbsp;@Html.DisplayFor(modelItem => item.EnviaUser)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">F. RECIBE:</span>&nbsp;@Html.DisplayFor(modelItem => item.RecibeFecha)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">U. RECIBE:</span>&nbsp;@Html.DisplayFor(modelItem => item.RecibeUser)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">ESTADO:</span>&nbsp;@Html.DisplayFor(modelItem => item.Estado)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">DIAS:</span>&nbsp;@Html.DisplayFor(modelItem => item.Dias)<br />
+                                <span style="font-weight: bold; text-transform: uppercase;">OBSERV.:</span>&nbsp;@Html.DisplayFor(modelItem => item.Observaciones)<br />
+                            </p>
+                        </div>                                             
                     </div>
                 </div>
             </li>

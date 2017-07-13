@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\PublishSitradMovil</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Publish\SitradMovil</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -19,13 +19,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2017 12:35:16</publishTime>
     </File>
     <File Include="bin/BusinessEntity.dll">
-      <publishTime>07/06/2017 15:26:23</publishTime>
+      <publishTime>07/13/2017 08:59:49</publishTime>
     </File>
     <File Include="bin/BusinessLogic.dll">
-      <publishTime>07/06/2017 15:26:23</publishTime>
+      <publishTime>07/13/2017 08:59:49</publishTime>
     </File>
     <File Include="bin/DataAccess.dll">
-      <publishTime>07/06/2017 15:26:23</publishTime>
+      <publishTime>07/13/2017 08:59:49</publishTime>
     </File>
     <File Include="bin/es/System.Web.Helpers.resources.dll">
       <publishTime>01/28/2015 04:04:36</publishTime>
@@ -115,7 +115,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/SitradMovil.dll">
-      <publishTime>07/06/2017 15:26:26</publishTime>
+      <publishTime>07/13/2017 08:59:52</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>01/28/2015 04:04:30</publishTime>
@@ -295,7 +295,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/03/2017 09:54:51</publishTime>
     </File>
     <File Include="Views/Sitrad/Resultado.cshtml">
-      <publishTime>07/06/2017 15:24:49</publishTime>
+      <publishTime>07/12/2017 16:30:26</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>06/27/2017 12:34:51</publishTime>
